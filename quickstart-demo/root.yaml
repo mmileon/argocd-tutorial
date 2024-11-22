@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo-nginx
+  name: mahfuzul-nginx
   namespace: argocd
 spec:
   project: default

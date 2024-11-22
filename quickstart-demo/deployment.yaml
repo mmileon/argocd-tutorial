@@ -18,7 +18,6 @@ spec:
         ports:
           - containerPort: 80
         imagePullPolicy: IfNotPresent
-apiVersion: argoproj.io/v1alpha1
 kind: Application
 spec:
    syncPolicy:

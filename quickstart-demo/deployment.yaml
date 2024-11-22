@@ -18,9 +18,4 @@ spec:
         ports:
           - containerPort: 80
         imagePullPolicy: IfNotPresent
-kind: Application
-spec:
-   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+

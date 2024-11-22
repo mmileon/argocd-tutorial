@@ -18,4 +18,17 @@ spec:
         ports:
           - containerPort: 80
         imagePullPolicy: IfNotPresent
+project: default
+source:
+  repoURL: https://github.com/mmileon/argocd-tutorial
+  path: quickstart-demo
+  targetRevision: HEAD
+destination:
+  server: https://kubernetes.default.svc
+  namespace: default
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+
 
